@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+  background-color: #4b145b;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 0.3em;
+  width: 66%;
+  background-color: white;
+  color: #102a42;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1em;
+}
+
+.container > * {
+  padding: 1em;
+}
+
+.left {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 500;
+}
+
+.article {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.3em;
+  margin: 0.9em 0;
+}
+
+.article > * {
+  margin: 0.8em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  background-color: #eae6eb;
+  padding: 0.4em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon > svg {
+  fill: red;
+}
+
+.title {
+  font-size: 1em;
+  color: #102a42;
+  letter-spacing: 1.3px;
+}
+
+.desc {
+  color: #324d67;
+  letter-spacing: 0.5px;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
