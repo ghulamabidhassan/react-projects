@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: #f1f5f8;
+}
+
+main {
+  margin: 5em 0;
+}
+
+header {
+  text-align: center;
+}
+
+.loading {
+  font-size: 4em;
+  color: #102a42;
+  margin: 1em 0;
+  text-transform: capitalize;
+}
+
+.heading {
+  font-size: 2.5em;
+  color: #102a42;
+  margin: 0.15em 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.underline {
+  background-color: #2caeba;
+  height: 0.25em;
+  width: 5em;
+  margin: 0 auto;
+  display: block;
+}
+
+.grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 4em 3em 2em 3em;
+  column-gap: 1em;
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-company {
+  background: transparent;
+  border: none;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  color: black;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  width: 60%;
+  border-left: 2px solid transparent;
+  transition: 300ms ease-in-out;
+}
+
+.btn-company:hover {
+  color: #2caeba;
+  width: 60%;
+  border-left: 2px solid #2caeba;
+  transition: 300ms ease-in-out;
+}
+
+.active {
+  color: #2caeba;
+  width: 60%;
+  border-left: 2px solid #2caeba;
+  transition: 300ms ease-in-out;
+}
+
+.job-content {
+  width: 100%;
+}
+
+.job-content > * {
+  margin: 0 0 0.35em 0;
+}
+
+.profession {
+  color: #102a42;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.company {
+  color: #617d98;
+  background: #dae2ec;
+  width: fit-content;
+  height: auto;
+  padding: 0.25em 0.6em;
+  border-radius: 0.5em;
+}
+
+.date {
+  color: #617d98;
+  font-weight: 100;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  margin: 0.75em 0;
+}
+
+.description {
+  color: #324d67;
+  padding: 1em 0;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  font-size: 0.95em;
+}
+
+.icon {
+  fill: #2caeba;
+  margin: 0 1.9em 0 0;
+}
+
+.info-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.more-info {
+  background-color: #2caeba;
+  padding: 0.6em 3.5em;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: white;
+  border-radius: 0.3em;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.more-info:hover {
+  opacity: 0.7;
+}
