@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --title: #102a42;
+  --desc: #617d98;
+  --price: #c59d5f;
+  --bg: #f1f5f8;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+  background-color: var(--bg);
+}
+
+.head-section {
+  text-align: center;
+  margin: 4em 0 0 0;
+}
+
+.heading {
+  font-size: 2.5em;
+  color: var(--title);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin: 0 0 0.1em 0;
+}
+
+.underline {
+  margin: 0 auto;
+  height: 0.25em;
+  background-color: var(--price);
+  width: 5em;
+}
+
+.categories {
+  margin: 2em 0;
+  font-size: 1.2em;
+  color: var(--price);
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 0.3em 0.8em;
+  font-size: 0.9em;
+  border: none;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--price);
+  transition: 300ms ease-in-out;
+  text-transform: capitalize;
+  margin: 0 0.75em;
+}
+
+.btn:hover {
+  background-color: var(--price);
+  color: white;
+  border-radius: 0.2em;
+}
+
+.menu-section {
+  margin: 3em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  margin: 3em 0em;
+  padding: 0 6em;
+  row-gap: 3em;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  height: fit-content;
+  width: fit-content;
+  column-gap: 1.3em;
+}
+
+.img {
+  height: 150px;
+  border: 4px solid var(--price);
+  border-radius: 0.2em;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black dotted;
+  padding-bottom: 0.5em;
+}
+
+.title {
+  font-size: 0.95em;
+  text-transform: capitalize;
+  letter-spacing: 1.9px;
+  color: #102a42;
+}
+
+.price {
+  color: var(--price);
+  letter-spacing: 1px;
+  font-size: 0.95em;
+  font-weight: bolder;
+}
+
+.desc {
+  font-size: 0.95em;
+  color: #617d98;
+  margin: 1em 0;
+  line-height: 1.7em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: 0.7px;
+}
