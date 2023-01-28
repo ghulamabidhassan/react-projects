@@ -7,7 +7,8 @@ import SingleColor from "./SingleColor";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState([]);
+
+  const [list, setList] = useState(new Values(`#d3ffce`).all(10));
 
   const handleSubmit = () => {
     try {
