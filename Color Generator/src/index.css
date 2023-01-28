@@ -82,8 +82,14 @@ section {
   /* margin: 0.5em; */
   flex-grow: 1;
   /* background-color: yellow; */
-  padding: 2em 0 0 2em;
+  /* padding: 2em 0 0 1.3em; */
+  padding: 1em;
   color: #102a42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
 }
 
 .weight {
@@ -98,4 +104,11 @@ section {
 
 .light {
   color: white;
+}
+
+.copy {
+  font-size: 0.7em;
+  color: #102a42;
+  margin-top: 0.8em;
+  text-transform: uppercase;
 }
