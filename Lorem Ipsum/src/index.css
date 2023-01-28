@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: #ebf7ff;
+}
+
+header {
+  margin: 5em 0 1em 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.heading {
+  color: #063251;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > * {
+  margin: 0 0.35em;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.65em 1em;
+  letter-spacing: 0.8px;
+  border-radius: 0.4em;
+  border: none;
+  color: #063251;
+  background-color: #49a6e9;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input {
+  width: 4.5%;
+  padding: 0.15em 0 0.15em 0.2em;
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input[type="number"] {
+  font-size: 1.5em;
+}
+
+.btn:hover {
+  background-color: #4285b6;
+}
+
+span {
+  color: #063251;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.paragraphs {
+  width: 55%;
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.para {
+  font-size: 1em;
+  margin: 1em 0;
+  color: #617d98;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+}
