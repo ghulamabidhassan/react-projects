@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: #f1f5f8;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  color: #102a42;
+  text-transform: capitalize;
+  font-size: 1.8em;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 7em;
+  background-color: white;
+  width: 40%;
+  border-radius: 0.25em;
+  padding: 1.3em 2.3em 1.8em 2.3em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.alert {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0.45em 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 0.8em;
+}
+
+.danger {
+  background-color: rgba(209, 86, 86, 0.158);
+  color: red;
+}
+
+.success {
+  background-color: #f1f5f8;
+  color: green;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4em;
+}
+
+input {
+  padding: 0.3em 0 0.3em 1em;
+  width: 100%;
+  border-radius: 0.2em;
+  border: 2px solid transparent;
+  background-color: #f1f5f8;
+  font-size: 1em;
+}
+
+input[type="placeholder"] {
+  font-size: 1.2em;
+}
+
+.submit {
+  padding: 0.64em 1em;
+  cursor: pointer;
+  background-color: #a5d5f8;
+  border: none;
+  border-radius: 0.2em;
+  color: #102a42;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 200ms ease-in-out;
+}
+
+.submit:hover {
+  background-color: #668eaa;
+  color: white;
+}
+
+.lists {
+  padding: 1.5em 0em;
+  transition: 300ms ease-in-out;
+}
+
+.article {
+  padding: 0.5em 0 0.5em 1.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5em;
+  font-size: 0.95em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0.75em 0;
+  transition: 600ms ease-in-out;
+  color: #4e697c;
+}
+
+.icon {
+  margin: 0 0.2em;
+  scale: 0.85;
+}
+
+.edit {
+  fill: #6be675;
+}
+
+.trash {
+  fill: #e66b6b;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/* .list {
+} */
+
+.article:hover {
+  background-color: #f1f5f8;
+}
+
+.clear-btn {
+  display: grid;
+  place-items: center;
+}
+
+.clear {
+  background-color: transparent;
+  border: none;
+  color: rgb(201, 56, 56);
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.clear:hover {
+  color: red;
+}
