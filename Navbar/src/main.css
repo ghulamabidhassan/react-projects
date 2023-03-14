@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --Gray: #f8fafc;
+  --btn: #49a6e9;
+  --black: #334155;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  background-color: var(--Gray);
+  color: var(--black);
+}
+
+.nav-cont {
+  height: 4.5em;
+  width: 100%;
+  background-color: white;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 5em;
+}
+
+.shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.img {
+  height: 2.5em;
+  cursor: pointer;
+}
+
+.menus ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 0.4em;
+  text-transform: capitalize;
+  color: var(--black);
+  transition: 300ms ease-in-out;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--btn);
+}
+
+.menus-mob {
+  display: none;
+}
+
+.icon {
+  margin: 0em 0.35em;
+  transition: 300ms ease-in-out;
+  fill: var(--btn);
+}
+
+.icon:hover {
+  cursor: pointer;
+  fill: blue;
+}
+
+.mobile {
+  background-color: white;
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-cont {
+    height: 4.5em;
+    background-color: white;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+  }
+
+  .img {
+    height: 2em;
+  }
+
+  .menus {
+    display: none;
+  }
+
+  .menus-mob {
+    background-color: white;
+    display: none;
+    height: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 8px;
+  }
+
+  .active {
+    display: block;
+    visibility: visible;
+    height: auto;
+    background-color: white;
+    transition: height 2s ease-in-out;
+  }
+
+  .menus-mob ul {
+    list-style: none;
+    width: 100%;
+  }
+
+  .menus-mob ul li {
+    padding: 0.5em 0 1em 0.8em;
+    transition: 300ms ease-in-out;
+  }
+
+  .menus-mob ul li:hover {
+    padding: 0.5em 0 1em 1.3em;
+    background-color: #3da6f1;
+    color: white;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  .ham-bar {
+    height: 3em;
+    transition: 300ms ease-in-out;
+    fill: var(--btn);
+    scale: 1.5;
+  }
+
+  .ham-bar:hover {
+    cursor: pointer;
+    fill: blue;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  body {
+    font-size: 1.4em;
+  }
+}
