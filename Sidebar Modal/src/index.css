@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --Gray: #f8fafc;
+  --btn: #49a6e9;
+  --black: #334155;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  background-color: var(--Gray);
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.35em 1em;
+  background-color: var(--btn);
+  border: none;
+  color: white;
+  border-radius: 0.2em;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 300ms ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: btn-scale 1000ms ease-in infinite alternate;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@keyframes btn-scale {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
+}
+
+.ham {
+  position: absolute;
+  fill: var(--btn);
+  top: 6%;
+  left: 3.5%;
+  scale: 2;
+  animation: scale 1000ms ease-in infinite alternate;
+  z-index: 1;
+}
+
+.ham:hover {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes scale {
+  0% {
+    scale: 2;
+  }
+
+  100% {
+    scale: 2.5;
+  }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.329);
+  display: none;
+  position: absolute;
+}
+
+.overlay-active {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.329);
+  position: absolute;
+  z-index: 3;
+}
+
+.modal {
+  height: 12em;
+  width: 45%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5em;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  scale: 2;
+  top: 15%;
+  left: 92%;
+  fill: red;
+  transition: 300ms ease-in-out;
+}
+
+.close:hover {
+  cursor: pointer;
+  scale: 2.3;
+}
+
+.title {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.sidebar {
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 0;
+  left: -30%;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  display: none;
+  transition: 1000ms ease-in-out;
+}
+
+.sidebar-active {
+  display: block;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 0;
+  left: 0;
+  width: 30%;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  transition: 1000ms ease-in-out;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+}
+
+.sidebar-close-icon {
+  fill: red;
+  scale: 1.5;
+  cursor: pointer;
+}
+
+.menus {
+  margin-left: 0em;
+}
+
+.menus li {
+  text-transform: capitalize;
+  margin: 0.3em 0;
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  transition: 500ms ease-in-out;
+}
+
+.menus li:hover {
+  cursor: pointer;
+  background-color: rgb(241, 218, 218);
+}
+
+.icon {
+  margin: 0 0.8em 0.5em 0;
+  fill: rgb(75, 73, 73);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .first {
+    margin-bottom: 0.8em;
+  }
+
+  .img {
+    height: 2em;
+    padding: 0 2.8em 0 0;
+  }
+
+  .ham {
+    font-size: 1.2em;
+    top: 4%;
+    left: 8%;
+  }
+
+  .modal {
+    width: 80%;
+  }
+
+  .close {
+    left: 87%;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .sidebar {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 0;
+    left: -30%;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+    display: none;
+    transition: 1000ms ease-in-out;
+  }
+
+  .sidebar-active {
+    display: block;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+    transition: 1000ms ease-in-out;
+  }
+}
